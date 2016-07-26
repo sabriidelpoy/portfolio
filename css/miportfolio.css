@@ -3,7 +3,7 @@
     src: url(../resources/fonts/BEBAS.ttf);
 }
 
-.btn, .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
+body, .btn, .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
     font-family: BEBAS,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
@@ -23,12 +23,135 @@ header .header-content {
     padding:0;
 }
 
+header .header-content .line {
+    background-color: #CE6E69;
+    width:30px;
+    height:5px;
+    display:inline-block;
+}
+
 #homeHeading {
     text-align: left;
     font-weight: normal;
     display:inline-block;
 }
 
+.header-border {
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.header-border .border{
+    display:block;
+    width:50px;
+    height:20px;
+    float:left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+}
+
+.header-border .border-left{
+    background-image: url(../img/borde_izquierdo.png);
+}
+
+.header-border .border-right{
+    background-image: url(../img/borde_derecho.png);
+}
+.header-border span{
+   float:left; 
+    margin: 0 8px;
+    letter-spacing: 3px;
+}
+
+.header-lamps-wrapper {
+    height: 300px;
+    float:right;
+    margin-right:10%;
+}
+.header-lamp {
+    display:block;
+    background-repeat: no-repeat;
+    float:left;
+    background-size: cover;
+    float: left;
+    background-position: 0 100%;
+    width: 50px;
+}
+.header-lamp.short {
+    height:160px;
+}
+.header-lamp.medium {
+    height:200px;
+}
+.header-lamp.long{
+    height:240px;
+}
+
+.header-lamp-1{
+    background-image: url(../img/lamparitas-01.png);
+    width: 45px;
+}
+
+.header-lamp-2{
+    background-image: url(../img/lamparitas-02.png);
+}
+
+.header-lamp-3{
+    background-image: url(../img/lamparitas-03.png);
+    width: 45px;
+}
+
+.header-lamp-4{
+    background-image: url(../img/lamparitas-04.png);
+}
+
+.header-lamp-5{
+    background-image: url(../img/lamparitas-05.png);
+}
+
+.header-lamp-6{
+    background-image: url(../img/lamparitas-06.png);
+}
+
+.header-lamp-7{
+    background-image: url(../img/lamparitas-07.png);
+    width: 60px;
+}
+
+.header-lamp-8{
+    background-image: url(../img/lamparitas-08.png);
+    width:40px;
+}
+
+.header-lamp-9{
+    background-image: url(../img/lamparitas-09.png);
+}
+
+
+
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
 
 @media (min-width: 768px){
     header .header-content .header-content-inner h1 {
