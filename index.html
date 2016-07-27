@@ -47,15 +47,31 @@
         </div>
     </div>
      <div class="header-lamps-wrapper">
-         <div class="header-lamp header-lamp-1 short"></div>
-         <div class="header-lamp header-lamp-2 long"></div>
-         <div class="header-lamp header-lamp-3 short"></div>
-         <div class="header-lamp header-lamp-4 long"></div>
-         <div class="header-lamp header-lamp-5 short"></div>
-         <div class="header-lamp header-lamp-6 medium"></div>
-         <div class="header-lamp header-lamp-7 short"></div>
-         <div class="header-lamp header-lamp-8 medium"></div>
-         <div class="header-lamp header-lamp-9 short"></div>
+         <div class="header-lamp header-lamp-1 short">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-2 long bounce-8">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-3 short">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-4 long">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-5 short bounce-10">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-6 medium">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-7 short">
+         <div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-8 long"><div class="lamp-circle"></div>
+         </div>
+         <div class="header-lamp header-lamp-9 short bounce-6"><div class="lamp-circle"></div>
+         </div>
      </div>
      <div class="header-border">
          <div class="border border-left"></div>
@@ -77,6 +93,29 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+    
+    <script>
+        
+        $(".header-lamp").on("mouseover",function(){
+            var $element = $(this);
+            $(this).addClass("swingimage");
+            
+            var lighting = setInterval(function(){ 
+                $element.addClass("lighting");
+            }, 200);
+            
+            var notLighting = setInterval(function(){ 
+                $element.removeClass("lighting");
+            }, 400);
+            
+            setTimeout(function(){
+                 $element.removeClass("swingimage");
+                 $element.removeClass("lighting");
+                clearInterval(lighting);
+                clearInterval(notLighting);
+            },3900);
+        }); 
+    </script>
 </body>
 </html>
 

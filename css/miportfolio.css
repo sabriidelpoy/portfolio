@@ -131,9 +131,64 @@ header .header-content .line {
     background-image: url(../img/lamparitas-09.png);
 }
 
+.header-lamp .lamp-circle{
+    background-color: rgba(206, 110, 105, 0.4);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    left: -11px;
+    position: relative;
+    bottom: -57%;
+} 
 
+.header-lamp.lighting .lamp-circle{
+  background-color: rgba(206, 110, 105, 0.6);  
+}
 
+.header-lamp-2 .lamp-circle{
+    left: -7px;
+    bottom: -70%;
+}
 
+.header-lamp-4 .lamp-circle {
+    left: -5px;
+    bottom: -76%;
+    width: 60px;
+    height: 60px;
+}
+
+.header-lamp-5 .lamp-circle {
+        width: 60px;
+    height: 60px;
+    left: -5px;
+    bottom: -63%;
+}
+
+.header-lamp-6 .lamp-circle {
+        bottom: -72%;
+    width: 60px;
+    height: 60px;
+    left: -4px;
+}
+
+.header-lamp-7 .lamp-circle {
+        left: -5px;
+    bottom: -65%;
+}
+
+.header-lamp-8 .lamp-circle {
+        bottom: -67%;
+    left: -13px;
+}
+
+.header-lamp-9 .lamp-circle {
+        width: 60px;
+    height: 60px;
+    left: -6px;
+    bottom: -65%;
+}
+
+/*ANIMATIONS*/
 @-webkit-keyframes swinging{
     0%{-webkit-transform: rotate(10deg);}
     50%{-webkit-transform: rotate(-5deg)}
@@ -149,9 +204,77 @@ header .header-content .line {
 .swingimage{
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
-    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 3.5s ease-in-out forwards infinite;
+    -webkit-animation: swinging 3s ease-in-out forwards infinite;
+    animation: swinging 3s ease-in-out forwards infinite;
 }
+
+@-moz-keyframes bounce {
+  0%, 20%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  25% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  25% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  25% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-6{
+  -moz-animation: bounce 6s infinite;
+  -webkit-animation: bounce 6s infinite;
+  animation: bounce 6s infinite;
+}
+
+.bounce-10{
+  -moz-animation: bounce 10s infinite;
+  -webkit-animation: bounce 10s infinite;
+  animation: bounce 10s infinite;
+}
+
+.bounce-8{
+  -moz-animation: bounce 8s infinite;
+  -webkit-animation: bounce 8s infinite;
+  animation: bounce 8s infinite;
+}
+
 
 @media (min-width: 768px){
     header .header-content .header-content-inner h1 {
