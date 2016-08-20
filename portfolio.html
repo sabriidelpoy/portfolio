@@ -26,6 +26,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
  
     <!-- Portfolio CSS -->
     <link rel="stylesheet" href="css/miportfolio.css"> 
@@ -39,6 +40,41 @@
 </head>
 
 <body>
+    <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+         <div class="header-lamps-wrapper">
+             <div class="header-lamp header-lamp-1 short bounce-10">
+             <div class="lamp-circle"></div>
+             </div>
+             <div class="header-lamp header-lamp-2 long bounce-8">
+             <div class="lamp-circle"></div>
+            </div>
+        </div>
+        <h3 id="title">Sabrina del Poy</h3>
+        <div id="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus at quam egestas suscipit. Sed a nulla nunc. Maecenas consectetur nunc hendrerit sem pretium fermentum.</p>
+        </div>
+        <div id="social">
+            <a href="" class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="icons fa fa-facebook fa-stack-1x"></i>
+            </a>
+            <a href="" class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="icons fa fa-linkedin fa-stack-1x"></i>
+            </a>
+            <a href="" class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="icons fa fa-vimeo fa-stack-1x"></i>
+            </a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+        
+    <div id="page-content-wrapper">
+
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -91,6 +127,9 @@
             </div>
         </div>
     </section>
+    </div>
+    
+    </div>
  
    <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -105,6 +144,14 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+    
+    <!-- Menu Toggle Script -->
+   <!-- <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>-->
     
 </body>
 </html>

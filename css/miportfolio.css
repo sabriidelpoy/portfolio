@@ -316,7 +316,9 @@ header .header-content .line {
     }
 }
 
-
+#mainNav {
+    position: absolute;
+}
 .navbar-default .nav>li>a, .navbar-default .nav>li>a:focus{
     color:#111 !important; 
 }
@@ -340,10 +342,12 @@ header .header-content .line {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     text-align:right;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #portfolio {
-    margin-top:51px;
+    margin-top:91px;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -353,4 +357,78 @@ header .header-content .line {
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     color:#111;
+}
+
+#portfolio img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#page-content-wrapper {
+    padding-left:0 !important;
+    padding-right: 0 !important;
+}
+
+#sidebar-wrapper {
+    background-color:#CE6E69;
+}
+
+#sidebar-wrapper .header-lamps-wrapper{
+    float: left;
+    margin-left: 20px;
+}
+
+#sidebar-wrapper .header-lamp .lamp-circle{
+    background-color: rgba(254, 170, 173, 0.4);
+}
+
+#title {
+    letter-spacing: 2px;
+    line-height: 45px;
+    margin-top: 85px;
+}
+
+#description {
+    display: inline-block;
+    color: #FFF;
+}
+
+#description p {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 20px;
+}
+
+#social {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 25%;
+}
+#social .fa-circle:before {
+    color:#FFF;
+     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.52);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.52);
+        border-radius:100%;
+}
+#social .icons:before{
+    color:#CE6E69;
+}
+
+#social a:hover .icons{
+    -webkit-transform:rotateZ(360deg);
+    -moz-transform:rotateZ(360deg);
+    -o-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+    transform:rotateZ(360deg);
+
+    transition: transform 0.4s ease-out;
+}
+
+#social a:hover .icons:before{
+    color:#FFF;
+}
+
+#social a:hover .fa-circle:before{
+    color:rgba(255, 200, 200, 0.6);
 }
