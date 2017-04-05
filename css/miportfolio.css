@@ -3,6 +3,11 @@
     src: url(../resources/fonts/BEBAS.ttf);
 }
 
+@font-face {
+    font-family: Din-light;
+    src: url(../resources/fonts/DINAlternateLight.ttf);
+}
+
 body, .btn, .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
     font-family: BEBAS,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
@@ -362,6 +367,23 @@ header .header-content .line {
 #portfolio img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.gallery-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width:auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.gallery-popup img {
+    max-width: 100%;
+}
+
+.gallery-popup p {
+    font-family: Din-light,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 #page-content-wrapper {
