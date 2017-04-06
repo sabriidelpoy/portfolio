@@ -8,6 +8,16 @@
     src: url(../resources/fonts/DINAlternateLight.ttf);
 }
 
+@font-face {
+    font-family: Din;
+    src: url(../resources/fonts/DINAlternate.ttf);
+}
+
+@font-face {
+    font-family: MTCORSVA;
+    src: url(../resources/fonts/MTCORSVA.ttf);
+}
+
 body, .btn, .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
     font-family: BEBAS,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
@@ -374,8 +384,20 @@ header .header-content .line {
   background: #FFF;
   padding: 20px;
   width:auto;
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
+}
+
+.gallery-popup h4 {
+    letter-spacing: 3px;
+}
+.gallery-popup h5 {
+    color: #CE6E69;
+    letter-spacing: 1px;
+}
+
+.gallery-popup h6 {
+    margin-top:30px;
 }
 
 .gallery-popup img {
@@ -384,6 +406,12 @@ header .header-content .line {
 
 .gallery-popup p {
     font-family: Din-light,'Open Sans','Helvetica Neue',Arial,sans-serif;
+    margin-top:20px;
+}
+
+.gallery-popup a {
+    color: #CE6E69;
+    font-family: Din,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 #page-content-wrapper {
